@@ -1,0 +1,21 @@
+schema_version = "1.0.0"
+
+id = "bai"
+version = "0.3.0"
+name = "BAI - Blender AI Chat"
+tagline = "Chat with a custom LLM that works in your scene using skills"
+maintainer = "BAI contributors"
+type = "add-on"
+
+blender_version_min = "4.2.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+
+tags = ["User Interface", "3D View"]
+
+[permissions]
+network = "Send chat messages and scene data to the configured LLM provider"
+files = "Read the skill library and write temporary viewport screenshots"
+
+[build]
+paths_exclude_pattern = ["__pycache__/", "/.git/", "*.zip"]
