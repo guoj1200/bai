@@ -110,3 +110,9 @@ python -m unittest discover -s tests
 ## Security note
 
 `execute_blender_code` runs whatever Python the model writes, with your user's permissions. That Python can read and write files and access the network. Keep **Confirm Code Before Running** on unless you trust the model and provider. Scene data and screenshots are sent to the provider you configure.
+
+## License
+
+BAI is licensed under the [GNU General Public License v3.0 or later](LICENSE), as Blender add-ons must be (and as the Blender Extensions platform requires).
+
+The bundled skill library in `bai/skills/` comes from [arjun988/blender-skills](https://github.com/arjun988/blender-skills). It keeps its own MIT License; see [bai/skills/LICENSE.txt](bai/skills/LICENSE.txt).
